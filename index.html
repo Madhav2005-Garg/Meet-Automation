@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daksh Dynamics - Bulk Meeting Inviter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Schedule Bulk Meetings</h1>
+        <p>Upload your Excel file, select the start date/time, and choose meeting duration.</p>
+        
+        <form id="uploadForm">
+            <div class="input-group">
+                <label for="meetingDateTime">Meeting Date & Time</label>
+                <input type="datetime-local" id="meetingDateTime" />
+            </div>
+
+            <div class="input-group">
+                <label for="meetingDuration">Meeting Duration</label>
+                <select id="meetingDuration">
+                    <option value="15">15 Minutes</option>
+                    <option value="30">30 Minutes</option>
+                    <option value="45">45 Minutes</option>
+                    <option value="60" selected>1 Hour</option>
+                    <option value="90">1.5 Hours</option>
+                    <option value="120">2 Hours</option>
+                </select>
+            </div>
+
+            <div class="file-upload">
+                <input type="file" id="excelFile" accept=".xlsx, .xls" />
+                <label for="excelFile" id="fileLabel">Select Excel File</label>
+            </div>
+            
+            <button type="submit" id="submitBtn">Send Invitations</button>
+        </form>
+
+        <div id="errorBox" class="error-msg hidden"></div>
+
+        <div id="loader" class="hidden">
+            <div class="spinner"></div>
+            <p>Processing and sending invitations...</p>
+        </div>
+
+        <div id="results" class="hidden">
+            <h2>Results</h2>
+            <ul id="resultsList"></ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

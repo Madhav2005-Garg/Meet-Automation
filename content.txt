@@ -1,0 +1,14 @@
+You're invited to an exclusive hands-on workshop on Git & GitHub!
+
+📅 Date: September 22, 2026
+⏰ Time: 8:00 PM
+📍 Location: Google Meet (link attached to this calendar invite)
+
+What We'll Cover:
+• Version Control Basics (Git setup, Commits, Staging)
+• Branching & Merging Workflows
+• GitHub Collaboration (Push/Pull, Pull Requests, Conflict Resolution)
+
+Note: This invitation is restricted to your email address and cannot be forwarded. Please join 5 minutes early.
+
+See you at the workshop!
